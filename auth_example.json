@@ -1,0 +1,7 @@
+[
+    {
+        "apikey": "randomAPIKEYstringTOuseFORauthenticatingYOURSELFagainstTHEapp",
+        "user": "YOUR_FACEBOOK_USERNAME",
+        "pass": "YOUR_FACEBOOK_PASSWORD"
+    }
+]

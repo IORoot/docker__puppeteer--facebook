@@ -1,0 +1,23 @@
+{
+    "name": "ig-scheduler",
+    "version": "1.0.0",
+    "author": "Andy Pearson (https://ioroot.com)",
+    "description": "Allows you to schedule Instagram & Fcebook posts through the CLI",
+    "license": "MIT",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "puppeteer-core": "^5.4.1",
+        "serve-index": "^1.9.1",
+        "yargs": "^13.3.2"
+    },
+    "bin": {
+        "cs": "cli.js",
+        "vd": "cli_vd.js"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "repository": "IORoot/puppeteer__creator-studio--instagram"
+}
