@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fdocker.svg&fill=%23A855F7&width=200px&height=200px" style="width:200px;"/>
+<img src="https://svg-rewriter.sachinraja.workers.dev/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2F%40mdi%2Fsvg%406.7.96%2Fsvg%2Fdocker.svg&fill=%2315803D&width=200px&height=200px" style="width:200px;"/>
 
 <h3 align="center">Javascript / Puppeteer Instagram Scheduler</h3>
 
