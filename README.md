@@ -23,11 +23,11 @@
 	* 3.3. [Installation](#Installation)
 	* 3.4. [Authentication](#Authentication)
 * 4. [Puppeteer Script `creator_studio.js`](#PuppeteerScriptcreator_studio.js)
-	* 4.1. [1. Inputs and setting Defaults.](#InputsandsettingDefaults.)
-	* 4.2. [2. Custom logger](#Customlogger)
-	* 4.3. [3. Setters](#Setters)
-	* 4.4. [4. run](#run)
-	* 4.5. [5. Public Methods](#PublicMethods)
+	* 4.1. [Inputs and setting Defaults.](#InputsandsettingDefaults.)
+	* 4.2. [Custom logger](#Customlogger)
+	* 4.3. [Setters](#Setters)
+	* 4.4. [run](#run)
+	* 4.5. [Public Methods](#PublicMethods)
 	* 4.6. [Test Usage of `creator_studio.js`](#TestUsageofcreator_studio.js)
 * 5. [Command-Line Interface `cli.js`](#Command-LineInterfacecli.js)
 	* 5.1. [Usage](#Usage)
@@ -167,16 +167,16 @@ The API KEY is used to authenticate yourself with the REST `server.js` file.
 This is the main puppeteer script that does the automated steps.
 The script is broken into the following parts:
 
-###  4.1. <a name='InputsandsettingDefaults.'></a>1. Inputs and setting Defaults.
+###  4.1. <a name='InputsandsettingDefaults.'></a>Inputs and setting Defaults.
 
 At the top of the script you have all of thee loading in required libraries, global variables,
 default puppeteer_settings, default post settings, constants and XPATH locations.
 
-###  4.2. <a name='Customlogger'></a>2. Custom logger
+###  4.2. <a name='Customlogger'></a>Custom logger
 
 The logger allows us to write to a file and prefix each line with a date/time. Logs are stored in `./logs/debug.log`
 
-###  4.3. <a name='Setters'></a>3. Setters
+###  4.3. <a name='Setters'></a>Setters
 
 These are the methods that change (set) all of the variables declared above. Thesee variables
 control the behaviour of the script.
@@ -204,14 +204,14 @@ creator studio with.
 - `publicSetNOOP()` will turn on the NO OPeration functionality. Essentially, this will do every step as normal, however it will NOT submit everything at the end, within the creator_studio. THis is good for testing and making sure that all steps are working.
 
 
-###  4.4. <a name='run'></a>4. run
+###  4.4. <a name='run'></a>run
 
 This is the main bulk of the script. Each step is broken up with a comment specifying what it will do. Use a debugger and the `manual_run.js` script (with headless off), to follow each step.
 
 Each step will use the `selector` constant to reference the correct XPATH it should look for to perform it's task. For instance, the `publish_button` may change over time, so we can update the `selector` constant to look in a new XPATH location when that happens.
 
 
-###  4.5. <a name='PublicMethods'></a>5. Public Methods
+###  4.5. <a name='PublicMethods'></a>Public Methods
 
 At the bottom of the script is a list of the public methods available to the CLI and the HTTP REST Server to access the Setter methods.
 
